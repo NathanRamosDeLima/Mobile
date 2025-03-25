@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">exercicio1</string>
+    <string name="hintSenha">Insira sua senha\n</string>
+    <string name="hintUsuario">Usuário</string>
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ExemploView</string>
+    <string name="nome">Nome:</string>
+    <string name="hintNome">Insira seu nome completo</string>
+    <string name="email">Email</string>
+    <string name="hintEmail">Insira seu Email\n</string>
+    <string name="telefone">Telefone</string>
+    <string name="hintTelefone">Insira seu número de telefone</string>
+    <string name="whats">WhatsApp\n</string>
+    <string name="off">off\n</string>
+    <string name="on">on</string>
+    <string name="periodo">Periodo</string>
+    <string name="manha">Manhã</string>
+    <string name="tarde">Tarde</string>
+    <string name="noite">Noite</string>
+    <string name="preferencias">Preferencias</string>
+    <string name="Internet">Internet</string>
+    <string name="tv">Tv</string>
+    <string name="Streaming">Streamin</string>
+    <string name="limpar">Limpar</string>
+    <string name="exibir">Exibir</string>
+</resources>
