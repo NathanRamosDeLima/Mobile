@@ -3,6 +3,7 @@ package com.example.exemploview;
 import android.app.ActivityManager;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -52,8 +53,45 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
         else if (view.getId() == R.id.btnExibir){
-            Toast.makeText(this, "Botão Exibir", Toast.LENGTH_SHORT).show();
-        }
+            //Toast.makeText(this,"Exibir",Toast.LENGTH_LONG).show();
+            binding.lblDados.setVisibility(View.VISIBLE);
+            binding.txtNome.setText("Nome: "
+                    + binding.edtNome.getText().toString());
+            binding.txtEmail.setText("E-mail: "
+                    + binding.edtEmail.getText().toString());
+            binding.txtTelefone.setText("Telefone: "
+                    + binding.edtTelefone.getText().toString());
+            if(binding.swtWhats.isChecked()){
+                binding.txtWhatsApp.setText("WhatsApp: "
+                        +binding.swtWhats.getTextOn());
+            }else{
+                binding.txtWhatsApp.setText("WhatsApp: "
+                        +binding.swtWhats.getTextOff());
+            }
 
+            int idrdbSelecionado = binding.rdgPeriodo.getCheckedRadioButtonId();
+            if(idrdbSelecionado > 0){
+                RadioButton rdbSelecionado = findViewById(idrdbSelecionado);
+                binding.txtPeriodo.setText("Período: "
+                        + rdbSelecionado.getText().toString());
+            }
+
+            String pref="";
+            if(binding.chkINternet.isChecked())
+                pref = binding.chkINternet.getText().toString();
+            if(binding.chkTelefone.isChecked()){
+                pref += " ";
+                pref += binding.chkTelefone.getText().toString();
+            }
+            if(binding.chkTv.isChecked()){
+                pref += " ";
+                pref += binding.chkTv.getText().toString();
+            }
+            if(binding.chkStreamin.isChecked()){
+                pref += " ";
+                pref += binding.chkStreamin.getText().toString();
+            }
+            binding.txtPreferencia.setText("Preferências: " + pref);
+        }
     }
 }
