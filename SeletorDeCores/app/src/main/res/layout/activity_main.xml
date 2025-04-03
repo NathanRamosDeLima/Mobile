@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vermelho"
+        android:layout_margin="16dp" />
+
+    <SeekBar
+        android:id="@+id/skbVermelho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:max="255" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verde"
+        android:layout_margin="16dp" />
+
+    <SeekBar
+        android:id="@+id/skbVerde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/azul"
+        android:layout_margin="16dp" />
+
+    <SeekBar
+        android:id="@+id/skbAzul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/txtCor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/caixaCor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp" />
+
+</LinearLayout>
