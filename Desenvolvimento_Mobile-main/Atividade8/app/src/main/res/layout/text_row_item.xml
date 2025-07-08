@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="?android:attr/listPreferredItemHeightLarge"
+     android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imgFilme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp">
+
+        <TextView
+            android:id="@+id/txtFilmeNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtFilmeFranquia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
