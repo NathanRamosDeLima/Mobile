@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Contatos</string>
-    <string name="act_add">Adicionar</string>
-    <string name="act_edit">Editar</string>
-    <string name="act_remove">Remover</string>
-    <string name="act_help">Ajuda</string>
-</resources>
